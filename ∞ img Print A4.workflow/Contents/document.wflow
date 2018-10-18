@@ -51,7 +51,9 @@
 				<key>ActionParameters</key>
 				<dict>
 					<key>fileNames</key>
-					<array/>
+					<array>
+						<string>~/Desktop/y_combined-oct_18_2018_14.54.45.jpg</string>
+					</array>
 				</dict>
 				<key>BundleIdentifier</key>
 				<string>com.apple.Automator.SpecifiedFiles</string>
@@ -945,13 +947,21 @@
 A4=1.41
 RATIO=${1:-1}
 MAXWIDTH=3000
+NEWWIDTH=`bc &lt;&lt;&lt; "scale=3; $MAXWIDTH * $RATIO"`
+HEIGHT=`bc &lt;&lt;&lt; "scale=3; $MAXWIDTH * $A4"`
 
 for IMG in "${@:2}"; do
-	IMGDIR=`dirname "$IMG"`
-	NEWWIDTH=`bc &lt;&lt;&lt; "scale=3; $MAXWIDTH * $RATIO"`
-	HEIGHT=`bc &lt;&lt;&lt; "scale=3; $MAXWIDTH * $A4"`
-	mkdir -p "$IMGDIR/prints"
-	convert "$IMG" -resize "$NEWWIDTH"x -crop x"$HEIGHT" -extent "$MAXWIDTH"x"$HEIGHT" -background white -alpha remove -set filename:f '%p-%t' "$IMGDIR/prints/print-%[filename:f].pdf"
+  IMGDIR=`dirname "$IMG"`
+  FILENAME=`basename "$IMG"`
+  TMP_DIR="$IMGDIR/tmp-$FILENAME"
+
+  mkdir -p "$TMP_DIR"
+  convert "$IMG" -resize "$MAXWIDTH"x -background white -alpha remove "$TMP_DIR/print-original.jpg"
+  convert "$TMP_DIR/print-original.jpg" -crop x"$HEIGHT" -extent "$MAXWIDTH"x"$HEIGHT" -background white -alpha remove -set filename:f '%p-%t' "$TMP_DIR/print-%[filename:f].jpg"
+  rm "$TMP_DIR/print-original.jpg"
+	convert "$TMP_DIR/*.jpg" -set filename:f '%p-%t' "$TMP_DIR/print-%[filename:f].jpg" "$IMGDIR/print-$FILENAME.pdf"
+  rm -r "$TMP_DIR"
+
 done</string>
 					<key>CheckedForUserDefaultShell</key>
 					<true/>
@@ -1103,14 +1113,14 @@ done</string>
 					<dict>
 						<key>tokenizedValue</key>
 						<array>
-							<string>folder: prints/</string>
+							<string>PDF for prints created!</string>
 						</array>
 					</dict>
 					<key>title</key>
 					<dict>
 						<key>tokenizedValue</key>
 						<array>
-							<string>DONE</string>
+							<string>Done</string>
 						</array>
 					</dict>
 				</dict>
@@ -1130,9 +1140,9 @@ done</string>
 					<key>message</key>
 					<string></string>
 					<key>subtitle</key>
-					<string>folder: prints/</string>
+					<string></string>
 					<key>title</key>
-					<string>DONE</string>
+					<string>Done</string>
 				</dict>
 				<key>BundleIdentifier</key>
 				<string>com.apple.Automator.Display-Notification</string>
@@ -1215,61 +1225,61 @@ done</string>
 	</array>
 	<key>connectors</key>
 	<dict>
-		<key>0B077E23-0EB9-4B05-85EB-9E49D9863DB8</key>
-		<dict>
-			<key>from</key>
-			<string>7616D1D5-BAFD-4528-94A3-C07E44398A61 - 7616D1D5-BAFD-4528-94A3-C07E44398A61</string>
-			<key>to</key>
-			<string>F9EAFBB3-4388-428E-8D39-0F1987980553 - F9EAFBB3-4388-428E-8D39-0F1987980553</string>
-		</dict>
-		<key>149D87BF-C382-4331-ACA4-F5A4AC95E458</key>
-		<dict>
-			<key>from</key>
-			<string>919B1FED-0383-41F3-91C1-EAFC9FB79E22 - 919B1FED-0383-41F3-91C1-EAFC9FB79E22</string>
-			<key>to</key>
-			<string>B528EEA0-6DA1-4D4C-895C-32A41F1D73F4 - B528EEA0-6DA1-4D4C-895C-32A41F1D73F4</string>
-		</dict>
-		<key>53189D05-9B5F-4231-84C5-2FC486CA069E</key>
-		<dict>
-			<key>from</key>
-			<string>B528EEA0-6DA1-4D4C-895C-32A41F1D73F4 - B528EEA0-6DA1-4D4C-895C-32A41F1D73F4</string>
-			<key>to</key>
-			<string>02005F56-C495-42EA-B1A4-DCDD4C9A12AA - 02005F56-C495-42EA-B1A4-DCDD4C9A12AA</string>
-		</dict>
-		<key>5DEF564D-0F5B-4B1A-A2BB-9694D4E4B1BB</key>
-		<dict>
-			<key>from</key>
-			<string>2C5C27BF-C475-4E81-8A93-46E53B0FC8D6 - 2C5C27BF-C475-4E81-8A93-46E53B0FC8D6</string>
-			<key>to</key>
-			<string>F6F78850-52D8-4CAA-8642-6110A869953B - F6F78850-52D8-4CAA-8642-6110A869953B</string>
-		</dict>
-		<key>73EC8763-D81E-4FF8-812B-8DCF9BF2B3FC</key>
-		<dict>
-			<key>from</key>
-			<string>C0227C18-EAAB-457C-A12C-0849377AA14F - C0227C18-EAAB-457C-A12C-0849377AA14F</string>
-			<key>to</key>
-			<string>7616D1D5-BAFD-4528-94A3-C07E44398A61 - 7616D1D5-BAFD-4528-94A3-C07E44398A61</string>
-		</dict>
-		<key>94F15631-547D-4159-8837-1C577EC4A086</key>
+		<key>06A749C1-FC3B-464F-A826-D6277101CDA8</key>
 		<dict>
 			<key>from</key>
 			<string>02005F56-C495-42EA-B1A4-DCDD4C9A12AA - 02005F56-C495-42EA-B1A4-DCDD4C9A12AA</string>
 			<key>to</key>
 			<string>1B03CC63-E42D-4878-BCC9-661A779CCF04 - 1B03CC63-E42D-4878-BCC9-661A779CCF04</string>
 		</dict>
-		<key>CDEA24EB-8CC8-4C26-A789-50D2C090F423</key>
+		<key>20C87BBD-AA2A-4C5D-B640-BC400B3F7039</key>
+		<dict>
+			<key>from</key>
+			<string>7616D1D5-BAFD-4528-94A3-C07E44398A61 - 7616D1D5-BAFD-4528-94A3-C07E44398A61</string>
+			<key>to</key>
+			<string>F9EAFBB3-4388-428E-8D39-0F1987980553 - F9EAFBB3-4388-428E-8D39-0F1987980553</string>
+		</dict>
+		<key>4D86AFB3-4380-433B-819A-B9F575183C6D</key>
+		<dict>
+			<key>from</key>
+			<string>C0227C18-EAAB-457C-A12C-0849377AA14F - C0227C18-EAAB-457C-A12C-0849377AA14F</string>
+			<key>to</key>
+			<string>7616D1D5-BAFD-4528-94A3-C07E44398A61 - 7616D1D5-BAFD-4528-94A3-C07E44398A61</string>
+		</dict>
+		<key>5023045A-ABA7-42DF-B7BD-42E1D0C07EE2</key>
+		<dict>
+			<key>from</key>
+			<string>2C5C27BF-C475-4E81-8A93-46E53B0FC8D6 - 2C5C27BF-C475-4E81-8A93-46E53B0FC8D6</string>
+			<key>to</key>
+			<string>F6F78850-52D8-4CAA-8642-6110A869953B - F6F78850-52D8-4CAA-8642-6110A869953B</string>
+		</dict>
+		<key>66FACBDF-0A21-4AB4-9854-E4F5AF648C43</key>
+		<dict>
+			<key>from</key>
+			<string>919B1FED-0383-41F3-91C1-EAFC9FB79E22 - 919B1FED-0383-41F3-91C1-EAFC9FB79E22</string>
+			<key>to</key>
+			<string>B528EEA0-6DA1-4D4C-895C-32A41F1D73F4 - B528EEA0-6DA1-4D4C-895C-32A41F1D73F4</string>
+		</dict>
+		<key>8943C1D2-DD10-420E-9486-4FC4C3B51278</key>
 		<dict>
 			<key>from</key>
 			<string>F9EAFBB3-4388-428E-8D39-0F1987980553 - F9EAFBB3-4388-428E-8D39-0F1987980553</string>
 			<key>to</key>
 			<string>919B1FED-0383-41F3-91C1-EAFC9FB79E22 - 919B1FED-0383-41F3-91C1-EAFC9FB79E22</string>
 		</dict>
-		<key>E9C2040C-92D5-4501-9716-62E9239D2B98</key>
+		<key>BC4552A5-A5A4-4A22-8ADF-CDCE532C72C5</key>
 		<dict>
 			<key>from</key>
 			<string>F6F78850-52D8-4CAA-8642-6110A869953B - F6F78850-52D8-4CAA-8642-6110A869953B</string>
 			<key>to</key>
 			<string>C0227C18-EAAB-457C-A12C-0849377AA14F - C0227C18-EAAB-457C-A12C-0849377AA14F</string>
+		</dict>
+		<key>E6E267F1-4EF0-4E86-8518-422A5409446D</key>
+		<dict>
+			<key>from</key>
+			<string>B528EEA0-6DA1-4D4C-895C-32A41F1D73F4 - B528EEA0-6DA1-4D4C-895C-32A41F1D73F4</string>
+			<key>to</key>
+			<string>02005F56-C495-42EA-B1A4-DCDD4C9A12AA - 02005F56-C495-42EA-B1A4-DCDD4C9A12AA</string>
 		</dict>
 	</dict>
 	<key>variables</key>
