@@ -26,9 +26,7 @@ fi
 
 echo "Copying files to $HOME/Library/Services/"
 mkdir -p $HOME/Library/Services/
-TOTALFILES=`ls -l *.workflow | grep -c ".workflow"`
-echo "Copying $TOTALFILES ..."
-cp -r *.workflow $HOME/Library/Services/ || (echo "no workflow found" && exit 1)
+cp -r data/* $HOME/Library/Services/ || (echo "no workflow found" && exit 1)
 
 echo ">>>>:::::::::::::::"
 echo "Workflows are ready to use"
