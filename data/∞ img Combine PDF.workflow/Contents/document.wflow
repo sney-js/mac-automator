@@ -163,7 +163,7 @@
 export PATH=/usr/local/bin:$PATH
 
 DIR=`dirname "$1"`
-convert "$@" "$DIR"/pdf_combined-`date +%b_%d_%Y_%H.%M.%S`.pdf</string>
+convert "$@" -set filename: "%t" "$DIR"/%[filename:]-pdf-combined.pdf</string>
 					<key>CheckedForUserDefaultShell</key>
 					<true/>
 					<key>inputMethod</key>
@@ -276,7 +276,7 @@ convert "$@" "$DIR"/pdf_combined-`date +%b_%d_%Y_%H.%M.%S`.pdf</string>
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>388.500000:491.000000</string>
+				<string>388.500000:669.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Run Shell Script.action/Contents/Resources/English.lproj/main.nib</string>
 			</dict>
@@ -286,7 +286,7 @@ convert "$@" "$DIR"/pdf_combined-`date +%b_%d_%Y_%H.%M.%S`.pdf</string>
 	</array>
 	<key>connectors</key>
 	<dict>
-		<key>699B5A39-672A-46E8-90B0-F6006A0C034E</key>
+		<key>94745165-BC28-4342-9445-00DD13C9CE02</key>
 		<dict>
 			<key>from</key>
 			<string>70BFE1D5-2B77-4230-8761-03FC572CBC6A - 70BFE1D5-2B77-4230-8761-03FC572CBC6A</string>

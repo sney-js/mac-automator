@@ -818,9 +818,11 @@
 				<dict>
 					<key>Container</key>
 					<string>List</string>
+					<key>Optional</key>
+					<true/>
 					<key>Types</key>
 					<array>
-						<string>*</string>
+						<string>com.apple.cocoa.string</string>
 					</array>
 				</dict>
 				<key>AMRequiredResources</key>
@@ -956,10 +958,10 @@ for IMG in "${@:2}"; do
   TMP_DIR="$IMGDIR/tmp-$FILENAME"
 
   mkdir -p "$TMP_DIR"
-  convert "$IMG" -resize "$MAXWIDTH"x -background white -alpha remove "$TMP_DIR/print-original.jpg"
+  convert "$IMG" -resize "$NEWWIDTH"x -background white -alpha remove "$TMP_DIR/print-original.jpg"
   convert "$TMP_DIR/print-original.jpg" -crop x"$HEIGHT" -extent "$MAXWIDTH"x"$HEIGHT" -background white -alpha remove -set filename:f '%p-%t' "$TMP_DIR/print-%[filename:f].jpg"
   rm "$TMP_DIR/print-original.jpg"
-	convert "$TMP_DIR/*.jpg" -set filename:f '%p-%t' "$TMP_DIR/print-%[filename:f].jpg" "$IMGDIR/print-$FILENAME.pdf"
+	convert "$TMP_DIR/*.jpg" "$IMGDIR/$FILENAME-print.pdf"
   rm -r "$TMP_DIR"
 
 done</string>
@@ -1077,7 +1079,7 @@ done</string>
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>388.500000:1277.000000</string>
+				<string>388.500000:1430.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Run Shell Script.action/Contents/Resources/English.lproj/main.nib</string>
 			</dict>
@@ -1140,7 +1142,7 @@ done</string>
 					<key>message</key>
 					<string></string>
 					<key>subtitle</key>
-					<string></string>
+					<string>PDF for prints created!</string>
 					<key>title</key>
 					<string>Done</string>
 				</dict>
@@ -1215,7 +1217,7 @@ done</string>
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>388.500000:1467.000000</string>
+				<string>388.500000:1620.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Display Notification.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
@@ -1225,61 +1227,61 @@ done</string>
 	</array>
 	<key>connectors</key>
 	<dict>
-		<key>1B50F187-8123-452E-A406-2C4F7664D481</key>
-		<dict>
-			<key>from</key>
-			<string>B528EEA0-6DA1-4D4C-895C-32A41F1D73F4 - B528EEA0-6DA1-4D4C-895C-32A41F1D73F4</string>
-			<key>to</key>
-			<string>02005F56-C495-42EA-B1A4-DCDD4C9A12AA - 02005F56-C495-42EA-B1A4-DCDD4C9A12AA</string>
-		</dict>
-		<key>217391B5-07BF-4016-888F-0CAB7DFC932E</key>
-		<dict>
-			<key>from</key>
-			<string>7616D1D5-BAFD-4528-94A3-C07E44398A61 - 7616D1D5-BAFD-4528-94A3-C07E44398A61</string>
-			<key>to</key>
-			<string>F9EAFBB3-4388-428E-8D39-0F1987980553 - F9EAFBB3-4388-428E-8D39-0F1987980553</string>
-		</dict>
-		<key>2FC5BEA6-9A40-450D-9C37-D62A557E7700</key>
-		<dict>
-			<key>from</key>
-			<string>F9EAFBB3-4388-428E-8D39-0F1987980553 - F9EAFBB3-4388-428E-8D39-0F1987980553</string>
-			<key>to</key>
-			<string>919B1FED-0383-41F3-91C1-EAFC9FB79E22 - 919B1FED-0383-41F3-91C1-EAFC9FB79E22</string>
-		</dict>
-		<key>5BB20302-D481-43CF-8F7F-8F44A3D31259</key>
+		<key>11B973E7-5BA1-41F2-8C80-C35041796752</key>
 		<dict>
 			<key>from</key>
 			<string>2C5C27BF-C475-4E81-8A93-46E53B0FC8D6 - 2C5C27BF-C475-4E81-8A93-46E53B0FC8D6</string>
 			<key>to</key>
 			<string>F6F78850-52D8-4CAA-8642-6110A869953B - F6F78850-52D8-4CAA-8642-6110A869953B</string>
 		</dict>
-		<key>5C361192-3A6C-4246-B4D9-E4A935EB6325</key>
-		<dict>
-			<key>from</key>
-			<string>F6F78850-52D8-4CAA-8642-6110A869953B - F6F78850-52D8-4CAA-8642-6110A869953B</string>
-			<key>to</key>
-			<string>C0227C18-EAAB-457C-A12C-0849377AA14F - C0227C18-EAAB-457C-A12C-0849377AA14F</string>
-		</dict>
-		<key>ACDE399A-2321-4A85-9295-C978EFC2E665</key>
-		<dict>
-			<key>from</key>
-			<string>02005F56-C495-42EA-B1A4-DCDD4C9A12AA - 02005F56-C495-42EA-B1A4-DCDD4C9A12AA</string>
-			<key>to</key>
-			<string>1B03CC63-E42D-4878-BCC9-661A779CCF04 - 1B03CC63-E42D-4878-BCC9-661A779CCF04</string>
-		</dict>
-		<key>C71C6284-88C1-4A6C-9BB8-3B565059FDD9</key>
+		<key>511CA4E2-B64B-409B-ABF8-E81278DCEC1C</key>
 		<dict>
 			<key>from</key>
 			<string>919B1FED-0383-41F3-91C1-EAFC9FB79E22 - 919B1FED-0383-41F3-91C1-EAFC9FB79E22</string>
 			<key>to</key>
 			<string>B528EEA0-6DA1-4D4C-895C-32A41F1D73F4 - B528EEA0-6DA1-4D4C-895C-32A41F1D73F4</string>
 		</dict>
-		<key>F91EFF59-79EA-49EC-9AEE-883CF5A4A4D5</key>
+		<key>671EC634-756B-4851-B29F-2F32196EB28D</key>
+		<dict>
+			<key>from</key>
+			<string>7616D1D5-BAFD-4528-94A3-C07E44398A61 - 7616D1D5-BAFD-4528-94A3-C07E44398A61</string>
+			<key>to</key>
+			<string>F9EAFBB3-4388-428E-8D39-0F1987980553 - F9EAFBB3-4388-428E-8D39-0F1987980553</string>
+		</dict>
+		<key>ABF2D750-6D39-43B2-81F3-908E7FD208E0</key>
 		<dict>
 			<key>from</key>
 			<string>C0227C18-EAAB-457C-A12C-0849377AA14F - C0227C18-EAAB-457C-A12C-0849377AA14F</string>
 			<key>to</key>
 			<string>7616D1D5-BAFD-4528-94A3-C07E44398A61 - 7616D1D5-BAFD-4528-94A3-C07E44398A61</string>
+		</dict>
+		<key>B9745723-2C75-48B6-A9A6-5931E91969BD</key>
+		<dict>
+			<key>from</key>
+			<string>02005F56-C495-42EA-B1A4-DCDD4C9A12AA - 02005F56-C495-42EA-B1A4-DCDD4C9A12AA</string>
+			<key>to</key>
+			<string>1B03CC63-E42D-4878-BCC9-661A779CCF04 - 1B03CC63-E42D-4878-BCC9-661A779CCF04</string>
+		</dict>
+		<key>BBCB04CD-5461-466F-8090-9E6E80C9B66C</key>
+		<dict>
+			<key>from</key>
+			<string>F9EAFBB3-4388-428E-8D39-0F1987980553 - F9EAFBB3-4388-428E-8D39-0F1987980553</string>
+			<key>to</key>
+			<string>919B1FED-0383-41F3-91C1-EAFC9FB79E22 - 919B1FED-0383-41F3-91C1-EAFC9FB79E22</string>
+		</dict>
+		<key>D1BA45D3-43D5-46E3-B40F-09756DFC7725</key>
+		<dict>
+			<key>from</key>
+			<string>F6F78850-52D8-4CAA-8642-6110A869953B - F6F78850-52D8-4CAA-8642-6110A869953B</string>
+			<key>to</key>
+			<string>C0227C18-EAAB-457C-A12C-0849377AA14F - C0227C18-EAAB-457C-A12C-0849377AA14F</string>
+		</dict>
+		<key>F04147D6-2BA4-4A04-80F4-AAECBF3A612A</key>
+		<dict>
+			<key>from</key>
+			<string>B528EEA0-6DA1-4D4C-895C-32A41F1D73F4 - B528EEA0-6DA1-4D4C-895C-32A41F1D73F4</string>
+			<key>to</key>
+			<string>02005F56-C495-42EA-B1A4-DCDD4C9A12AA - 02005F56-C495-42EA-B1A4-DCDD4C9A12AA</string>
 		</dict>
 	</dict>
 	<key>variables</key>
