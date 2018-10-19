@@ -51,9 +51,7 @@
 				<key>ActionParameters</key>
 				<dict>
 					<key>fileNames</key>
-					<array>
-						<string>~/Desktop/y_combined-oct_18_2018_14.54.45.jpg</string>
-					</array>
+					<array/>
 				</dict>
 				<key>BundleIdentifier</key>
 				<string>com.apple.Automator.SpecifiedFiles</string>
@@ -944,6 +942,8 @@
 				<dict>
 					<key>COMMAND_STRING</key>
 					<string>source $HOME/.bash_profile	
+export PATH=/usr/local/bin:$PATH
+
 A4=1.41
 RATIO=${1:-1}
 MAXWIDTH=3000
@@ -1225,61 +1225,61 @@ done</string>
 	</array>
 	<key>connectors</key>
 	<dict>
-		<key>06A749C1-FC3B-464F-A826-D6277101CDA8</key>
+		<key>1B50F187-8123-452E-A406-2C4F7664D481</key>
 		<dict>
 			<key>from</key>
-			<string>02005F56-C495-42EA-B1A4-DCDD4C9A12AA - 02005F56-C495-42EA-B1A4-DCDD4C9A12AA</string>
+			<string>B528EEA0-6DA1-4D4C-895C-32A41F1D73F4 - B528EEA0-6DA1-4D4C-895C-32A41F1D73F4</string>
 			<key>to</key>
-			<string>1B03CC63-E42D-4878-BCC9-661A779CCF04 - 1B03CC63-E42D-4878-BCC9-661A779CCF04</string>
+			<string>02005F56-C495-42EA-B1A4-DCDD4C9A12AA - 02005F56-C495-42EA-B1A4-DCDD4C9A12AA</string>
 		</dict>
-		<key>20C87BBD-AA2A-4C5D-B640-BC400B3F7039</key>
+		<key>217391B5-07BF-4016-888F-0CAB7DFC932E</key>
 		<dict>
 			<key>from</key>
 			<string>7616D1D5-BAFD-4528-94A3-C07E44398A61 - 7616D1D5-BAFD-4528-94A3-C07E44398A61</string>
 			<key>to</key>
 			<string>F9EAFBB3-4388-428E-8D39-0F1987980553 - F9EAFBB3-4388-428E-8D39-0F1987980553</string>
 		</dict>
-		<key>4D86AFB3-4380-433B-819A-B9F575183C6D</key>
+		<key>2FC5BEA6-9A40-450D-9C37-D62A557E7700</key>
 		<dict>
 			<key>from</key>
-			<string>C0227C18-EAAB-457C-A12C-0849377AA14F - C0227C18-EAAB-457C-A12C-0849377AA14F</string>
+			<string>F9EAFBB3-4388-428E-8D39-0F1987980553 - F9EAFBB3-4388-428E-8D39-0F1987980553</string>
 			<key>to</key>
-			<string>7616D1D5-BAFD-4528-94A3-C07E44398A61 - 7616D1D5-BAFD-4528-94A3-C07E44398A61</string>
+			<string>919B1FED-0383-41F3-91C1-EAFC9FB79E22 - 919B1FED-0383-41F3-91C1-EAFC9FB79E22</string>
 		</dict>
-		<key>5023045A-ABA7-42DF-B7BD-42E1D0C07EE2</key>
+		<key>5BB20302-D481-43CF-8F7F-8F44A3D31259</key>
 		<dict>
 			<key>from</key>
 			<string>2C5C27BF-C475-4E81-8A93-46E53B0FC8D6 - 2C5C27BF-C475-4E81-8A93-46E53B0FC8D6</string>
 			<key>to</key>
 			<string>F6F78850-52D8-4CAA-8642-6110A869953B - F6F78850-52D8-4CAA-8642-6110A869953B</string>
 		</dict>
-		<key>66FACBDF-0A21-4AB4-9854-E4F5AF648C43</key>
-		<dict>
-			<key>from</key>
-			<string>919B1FED-0383-41F3-91C1-EAFC9FB79E22 - 919B1FED-0383-41F3-91C1-EAFC9FB79E22</string>
-			<key>to</key>
-			<string>B528EEA0-6DA1-4D4C-895C-32A41F1D73F4 - B528EEA0-6DA1-4D4C-895C-32A41F1D73F4</string>
-		</dict>
-		<key>8943C1D2-DD10-420E-9486-4FC4C3B51278</key>
-		<dict>
-			<key>from</key>
-			<string>F9EAFBB3-4388-428E-8D39-0F1987980553 - F9EAFBB3-4388-428E-8D39-0F1987980553</string>
-			<key>to</key>
-			<string>919B1FED-0383-41F3-91C1-EAFC9FB79E22 - 919B1FED-0383-41F3-91C1-EAFC9FB79E22</string>
-		</dict>
-		<key>BC4552A5-A5A4-4A22-8ADF-CDCE532C72C5</key>
+		<key>5C361192-3A6C-4246-B4D9-E4A935EB6325</key>
 		<dict>
 			<key>from</key>
 			<string>F6F78850-52D8-4CAA-8642-6110A869953B - F6F78850-52D8-4CAA-8642-6110A869953B</string>
 			<key>to</key>
 			<string>C0227C18-EAAB-457C-A12C-0849377AA14F - C0227C18-EAAB-457C-A12C-0849377AA14F</string>
 		</dict>
-		<key>E6E267F1-4EF0-4E86-8518-422A5409446D</key>
+		<key>ACDE399A-2321-4A85-9295-C978EFC2E665</key>
 		<dict>
 			<key>from</key>
-			<string>B528EEA0-6DA1-4D4C-895C-32A41F1D73F4 - B528EEA0-6DA1-4D4C-895C-32A41F1D73F4</string>
-			<key>to</key>
 			<string>02005F56-C495-42EA-B1A4-DCDD4C9A12AA - 02005F56-C495-42EA-B1A4-DCDD4C9A12AA</string>
+			<key>to</key>
+			<string>1B03CC63-E42D-4878-BCC9-661A779CCF04 - 1B03CC63-E42D-4878-BCC9-661A779CCF04</string>
+		</dict>
+		<key>C71C6284-88C1-4A6C-9BB8-3B565059FDD9</key>
+		<dict>
+			<key>from</key>
+			<string>919B1FED-0383-41F3-91C1-EAFC9FB79E22 - 919B1FED-0383-41F3-91C1-EAFC9FB79E22</string>
+			<key>to</key>
+			<string>B528EEA0-6DA1-4D4C-895C-32A41F1D73F4 - B528EEA0-6DA1-4D4C-895C-32A41F1D73F4</string>
+		</dict>
+		<key>F91EFF59-79EA-49EC-9AEE-883CF5A4A4D5</key>
+		<dict>
+			<key>from</key>
+			<string>C0227C18-EAAB-457C-A12C-0849377AA14F - C0227C18-EAAB-457C-A12C-0849377AA14F</string>
+			<key>to</key>
+			<string>7616D1D5-BAFD-4528-94A3-C07E44398A61 - 7616D1D5-BAFD-4528-94A3-C07E44398A61</string>
 		</dict>
 	</dict>
 	<key>variables</key>

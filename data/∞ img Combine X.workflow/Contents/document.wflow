@@ -162,6 +162,8 @@
 				<dict>
 					<key>COMMAND_STRING</key>
 					<string>source $HOME/.bash_profile
+export PATH=/usr/local/bin:$PATH
+
 DIR=`dirname "$1"`
 FILENAME=x_combined-`date +%b_%d_%Y_%H.%M.%S`.png
 convert +append "$@" "$DIR"/"$FILENAME"
@@ -531,26 +533,26 @@ echo $FILENAME</string>
 	</array>
 	<key>connectors</key>
 	<dict>
-		<key>2B0E69C0-AC06-4EFF-8938-24BF079B19ED</key>
-		<dict>
-			<key>from</key>
-			<string>42B7CCC3-21A7-4C60-A4B2-89D75E856EF1 - 42B7CCC3-21A7-4C60-A4B2-89D75E856EF1</string>
-			<key>to</key>
-			<string>D3840263-198E-46DE-8C76-893ACA2D3CD3 - D3840263-198E-46DE-8C76-893ACA2D3CD3</string>
-		</dict>
-		<key>5FF33B22-6F21-4575-8F3D-C33D48302301</key>
-		<dict>
-			<key>from</key>
-			<string>25EE9755-9A48-45BF-8179-DE634909A554 - 25EE9755-9A48-45BF-8179-DE634909A554</string>
-			<key>to</key>
-			<string>42B7CCC3-21A7-4C60-A4B2-89D75E856EF1 - 42B7CCC3-21A7-4C60-A4B2-89D75E856EF1</string>
-		</dict>
-		<key>6DEDF462-C09E-47B2-9FF8-9A981FB265F0</key>
+		<key>19547759-0685-4CAB-B5FA-4D6BFA470FBD</key>
 		<dict>
 			<key>from</key>
 			<string>D3840263-198E-46DE-8C76-893ACA2D3CD3 - D3840263-198E-46DE-8C76-893ACA2D3CD3</string>
 			<key>to</key>
 			<string>1BADE57F-3B1A-46D9-94E4-449FEC285FCD - 1BADE57F-3B1A-46D9-94E4-449FEC285FCD</string>
+		</dict>
+		<key>6170D541-C061-45B6-ADE4-425DEF700FBB</key>
+		<dict>
+			<key>from</key>
+			<string>42B7CCC3-21A7-4C60-A4B2-89D75E856EF1 - 42B7CCC3-21A7-4C60-A4B2-89D75E856EF1</string>
+			<key>to</key>
+			<string>D3840263-198E-46DE-8C76-893ACA2D3CD3 - D3840263-198E-46DE-8C76-893ACA2D3CD3</string>
+		</dict>
+		<key>A0FC5E7C-CD7D-43F7-B81E-FD58E8A9F321</key>
+		<dict>
+			<key>from</key>
+			<string>25EE9755-9A48-45BF-8179-DE634909A554 - 25EE9755-9A48-45BF-8179-DE634909A554</string>
+			<key>to</key>
+			<string>42B7CCC3-21A7-4C60-A4B2-89D75E856EF1 - 42B7CCC3-21A7-4C60-A4B2-89D75E856EF1</string>
 		</dict>
 	</dict>
 	<key>variables</key>

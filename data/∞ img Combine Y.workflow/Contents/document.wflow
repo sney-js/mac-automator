@@ -162,6 +162,8 @@
 				<dict>
 					<key>COMMAND_STRING</key>
 					<string>source $HOME/.bash_profile
+export PATH=/usr/local/bin:$PATH
+
 DIR=`dirname "$1"`
 convert -append "$@" "$DIR"/y_combined-`date +%b_%d_%Y_%H.%M.%S`.png</string>
 					<key>CheckedForUserDefaultShell</key>
@@ -286,7 +288,7 @@ convert -append "$@" "$DIR"/y_combined-`date +%b_%d_%Y_%H.%M.%S`.png</string>
 	</array>
 	<key>connectors</key>
 	<dict>
-		<key>FFDDC2BC-7896-4B17-9DF4-D6C2614FD072</key>
+		<key>8FEF1855-5E8C-4F51-994B-841C189F0EE6</key>
 		<dict>
 			<key>from</key>
 			<string>25EE9755-9A48-45BF-8179-DE634909A554 - 25EE9755-9A48-45BF-8179-DE634909A554</string>

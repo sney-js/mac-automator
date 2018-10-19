@@ -160,6 +160,8 @@
 				<dict>
 					<key>COMMAND_STRING</key>
 					<string>source $HOME/.bash_profile
+export PATH=/usr/local/bin:$PATH
+
 DIR=`dirname "$1"`
 convert "$@" "$DIR"/pdf_combined-`date +%b_%d_%Y_%H.%M.%S`.pdf</string>
 					<key>CheckedForUserDefaultShell</key>
@@ -284,7 +286,7 @@ convert "$@" "$DIR"/pdf_combined-`date +%b_%d_%Y_%H.%M.%S`.pdf</string>
 	</array>
 	<key>connectors</key>
 	<dict>
-		<key>68E52C47-A0F1-4FD0-8C35-7D8B09FBD7A7</key>
+		<key>699B5A39-672A-46E8-90B0-F6006A0C034E</key>
 		<dict>
 			<key>from</key>
 			<string>70BFE1D5-2B77-4230-8761-03FC572CBC6A - 70BFE1D5-2B77-4230-8761-03FC572CBC6A</string>

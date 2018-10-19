@@ -160,6 +160,7 @@
 				<dict>
 					<key>COMMAND_STRING</key>
 					<string>source $HOME/.bash_profile
+export PATH=/usr/local/bin:$PATH
 for f in "$@"
 do
 	DIR=`dirname "$f"`
@@ -423,14 +424,14 @@ done
 	</array>
 	<key>connectors</key>
 	<dict>
-		<key>2087ECD3-1CA4-457B-88F8-0D802A6C1678</key>
+		<key>14D5EF6A-3FDD-4E1B-87C8-715E786020D2</key>
 		<dict>
 			<key>from</key>
 			<string>6D90B6F8-16D6-48AE-8A50-265ECB5BD3DB - 6D90B6F8-16D6-48AE-8A50-265ECB5BD3DB</string>
 			<key>to</key>
 			<string>928F9508-8E45-41A4-A9D8-40D3AB8252E5 - 928F9508-8E45-41A4-A9D8-40D3AB8252E5</string>
 		</dict>
-		<key>3A020369-C768-4800-9728-A24AA8B1C1EC</key>
+		<key>17F67436-3D42-444A-9494-7EC968A1C67F</key>
 		<dict>
 			<key>from</key>
 			<string>04552748-1DF3-420A-9179-83B394EF1D5F - 04552748-1DF3-420A-9179-83B394EF1D5F</string>
