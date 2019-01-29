@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>AMApplicationBuild</key>
-	<string>444.7</string>
+	<string>444.39</string>
 	<key>AMApplicationVersion</key>
-	<string>2.8</string>
+	<string>2.9</string>
 	<key>AMDocumentVersion</key>
 	<string>2</string>
 	<key>actions</key>
@@ -103,7 +103,7 @@
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>388.500000:308.000000</string>
+				<string>392.000000:360.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Get Specified Finder Items.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
@@ -279,9 +279,9 @@ done
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>388.500000:491.000000</string>
+				<string>392.000000:542.000000</string>
 				<key>nibPath</key>
-				<string>/System/Library/Automator/Run Shell Script.action/Contents/Resources/English.lproj/main.nib</string>
+				<string>/System/Library/Automator/Run Shell Script.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
 			<key>isViewVisible</key>
 			<true/>
@@ -299,7 +299,7 @@ done
 					<array/>
 				</dict>
 				<key>AMActionVersion</key>
-				<string>v.1.0</string>
+				<string>1.0</string>
 				<key>AMApplication</key>
 				<array>
 					<string>Automator</string>
@@ -317,9 +317,7 @@ done
 					<dict>
 						<key>tokenizedValue</key>
 						<array>
-							<string>It's done </string>
-							<string>$(7AA74E63-85A8-407A-8ADD-2F3801EE01C0)</string>
-							<string>.</string>
+							<string>Conversion Complete!</string>
 						</array>
 					</dict>
 				</dict>
@@ -414,7 +412,7 @@ done
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>388.500000:681.000000</string>
+				<string>392.000000:731.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Display Notification.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
@@ -424,14 +422,14 @@ done
 	</array>
 	<key>connectors</key>
 	<dict>
-		<key>14D5EF6A-3FDD-4E1B-87C8-715E786020D2</key>
+		<key>5D0869B0-FC2E-46EA-93D4-2381F1739092</key>
 		<dict>
 			<key>from</key>
 			<string>6D90B6F8-16D6-48AE-8A50-265ECB5BD3DB - 6D90B6F8-16D6-48AE-8A50-265ECB5BD3DB</string>
 			<key>to</key>
 			<string>928F9508-8E45-41A4-A9D8-40D3AB8252E5 - 928F9508-8E45-41A4-A9D8-40D3AB8252E5</string>
 		</dict>
-		<key>17F67436-3D42-444A-9494-7EC968A1C67F</key>
+		<key>D53DD198-61B5-460A-B1BE-0CE0526EFF28</key>
 		<dict>
 			<key>from</key>
 			<string>04552748-1DF3-420A-9179-83B394EF1D5F - 04552748-1DF3-420A-9179-83B394EF1D5F</string>
@@ -490,11 +488,27 @@ done
 	</array>
 	<key>workflowMetaData</key>
 	<dict>
+		<key>applicationBundleIDsByPath</key>
+		<dict/>
+		<key>applicationPaths</key>
+		<array/>
+		<key>inputTypeIdentifier</key>
+		<string>com.apple.Automator.fileSystemObject.image</string>
+		<key>outputTypeIdentifier</key>
+		<string>com.apple.Automator.nothing</string>
+		<key>presentationMode</key>
+		<integer>15</integer>
+		<key>processesInput</key>
+		<integer>0</integer>
 		<key>serviceInputTypeIdentifier</key>
 		<string>com.apple.Automator.fileSystemObject.image</string>
 		<key>serviceOutputTypeIdentifier</key>
 		<string>com.apple.Automator.nothing</string>
 		<key>serviceProcessesInput</key>
+		<integer>0</integer>
+		<key>systemImageName</key>
+		<string>NSActionTemplate</string>
+		<key>useAutomaticInputType</key>
 		<integer>0</integer>
 		<key>workflowTypeIdentifier</key>
 		<string>com.apple.Automator.servicesMenu</string>
