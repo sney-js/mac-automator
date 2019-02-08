@@ -26,7 +26,8 @@ fi
 
 echo "Copying files to $HOME/Library/Services/"
 mkdir -p $HOME/Library/Services/
-cp -r data/* $HOME/Library/Services/ || (echo "no workflow found" && exit 1)
+ls $DIR/data/
+cp -r data/* $HOME/Library/Services/ && echo "Workflows copied!" || (echo "no workflow found" && exit 1)
 
 echo ">>>>:::::::::::::::"
 echo "Workflows are ready to use"
