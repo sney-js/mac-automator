@@ -8,7 +8,7 @@ NEWVERSION=`bc <<< $CURRVERSION+1`
 echo "NEWVERSION: $NEWVERSION"
 echo $NEWVERSION > .version
 
-TARGET="../snehil's-image-shortcuts-v1.$NEWVERSION"
+TARGET="../mac-image-shortcuts-v1.$NEWVERSION"
 mkdir "$TARGET"
 cp -r data "$TARGET/data"
 cp "install.command" "$TARGET/"
