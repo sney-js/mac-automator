@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>AMApplicationBuild</key>
-	<string>444.7</string>
+	<string>444.39</string>
 	<key>AMApplicationVersion</key>
-	<string>2.8</string>
+	<string>2.9</string>
 	<key>AMDocumentVersion</key>
 	<string>2</string>
 	<key>actions</key>
@@ -103,7 +103,7 @@
 				<key>isViewVisible</key>
 				<false/>
 				<key>location</key>
-				<string>388.500000:112.000000</string>
+				<string>294.250000:164.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Get Specified Finder Items.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
@@ -211,7 +211,7 @@
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>388.500000:218.000000</string>
+				<string>294.250000:269.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Set Value of Variable.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
@@ -380,9 +380,9 @@
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>388.500000:401.000000</string>
+				<string>294.250000:451.000000</string>
 				<key>nibPath</key>
-				<string>/System/Library/Automator/Run Shell Script.action/Contents/Resources/English.lproj/main.nib</string>
+				<string>/System/Library/Automator/Run Shell Script.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
 			<key>isViewVisible</key>
 			<true/>
@@ -488,7 +488,7 @@
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>388.500000:507.000000</string>
+				<string>294.250000:556.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Set Value of Variable.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
@@ -596,7 +596,7 @@
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>388.500000:610.000000</string>
+				<string>294.250000:658.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Get Value of Variable.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
@@ -775,7 +775,7 @@
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>388.500000:792.000000</string>
+				<string>294.250000:839.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Ask for Text.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
@@ -883,7 +883,7 @@
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>388.500000:898.000000</string>
+				<string>294.250000:944.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Set Value of Variable.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
@@ -991,7 +991,7 @@
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>388.500000:1001.000000</string>
+				<string>294.250000:1046.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Get Value of Variable.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
@@ -1051,7 +1051,7 @@
 export PATH=/usr/local/bin:$PATH
 FPS=`bc &lt;&lt;&lt; "100 / $1"`
 DIR=`dirname "$2"`
-convert -delay $FPS "${@:2}" -set filename: '%t' "$DIR/%[filename:]-gif-$1-fps.gif"</string>
+convert -delay $FPS "${@:2}" -dispose 2 -set filename: '%t' "$DIR/%[filename:]-gif-$1-fps.gif"</string>
 					<key>CheckedForUserDefaultShell</key>
 					<true/>
 					<key>inputMethod</key>
@@ -1164,9 +1164,9 @@ convert -delay $FPS "${@:2}" -set filename: '%t' "$DIR/%[filename:]-gif-$1-fps.g
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>388.500000:1184.000000</string>
+				<string>294.250000:1228.000000</string>
 				<key>nibPath</key>
-				<string>/System/Library/Automator/Run Shell Script.action/Contents/Resources/English.lproj/main.nib</string>
+				<string>/System/Library/Automator/Run Shell Script.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
 			<key>isViewVisible</key>
 			<true/>
@@ -1302,7 +1302,7 @@ convert -delay $FPS "${@:2}" -set filename: '%t' "$DIR/%[filename:]-gif-$1-fps.g
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>388.500000:1374.000000</string>
+				<string>294.250000:1417.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Display Notification.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
@@ -1312,68 +1312,68 @@ convert -delay $FPS "${@:2}" -set filename: '%t' "$DIR/%[filename:]-gif-$1-fps.g
 	</array>
 	<key>connectors</key>
 	<dict>
-		<key>03E20687-7174-49EB-BBDE-C7BDEED19497</key>
-		<dict>
-			<key>from</key>
-			<string>71D642B0-0411-4D83-B804-9616D416BE98 - 71D642B0-0411-4D83-B804-9616D416BE98</string>
-			<key>to</key>
-			<string>9E0C645E-0C72-4E99-83AA-34FDA3D6023B - 9E0C645E-0C72-4E99-83AA-34FDA3D6023B</string>
-		</dict>
-		<key>15E332BC-F792-403B-8DD2-4A93AF6215CD</key>
-		<dict>
-			<key>from</key>
-			<string>CD49454A-2770-4738-BFDF-0DD8CCA4715A - CD49454A-2770-4738-BFDF-0DD8CCA4715A</string>
-			<key>to</key>
-			<string>99AA447B-9B97-46EC-B6C1-B0E412C0B3AE - 99AA447B-9B97-46EC-B6C1-B0E412C0B3AE</string>
-		</dict>
-		<key>264360AD-6B02-4E37-9A0F-FC34B480FB3D</key>
-		<dict>
-			<key>from</key>
-			<string>9E0C645E-0C72-4E99-83AA-34FDA3D6023B - 9E0C645E-0C72-4E99-83AA-34FDA3D6023B</string>
-			<key>to</key>
-			<string>CD49454A-2770-4738-BFDF-0DD8CCA4715A - CD49454A-2770-4738-BFDF-0DD8CCA4715A</string>
-		</dict>
-		<key>2CA6E508-8A22-452D-9DF1-2AF34F499B43</key>
-		<dict>
-			<key>from</key>
-			<string>98D62661-9CF4-417D-AB04-D7C044D25F8A - 98D62661-9CF4-417D-AB04-D7C044D25F8A</string>
-			<key>to</key>
-			<string>71D642B0-0411-4D83-B804-9616D416BE98 - 71D642B0-0411-4D83-B804-9616D416BE98</string>
-		</dict>
-		<key>364001E7-E447-4DB5-9007-BC57B0564371</key>
-		<dict>
-			<key>from</key>
-			<string>B9C487CA-1B70-4B42-BE3F-D3307F582E7A - B9C487CA-1B70-4B42-BE3F-D3307F582E7A</string>
-			<key>to</key>
-			<string>EAA75385-CBAE-40A9-AB0F-3C2A1B1E9BCD - EAA75385-CBAE-40A9-AB0F-3C2A1B1E9BCD</string>
-		</dict>
-		<key>4C385585-8A1F-43AA-95A8-BBA6EA371195</key>
-		<dict>
-			<key>from</key>
-			<string>EAA75385-CBAE-40A9-AB0F-3C2A1B1E9BCD - EAA75385-CBAE-40A9-AB0F-3C2A1B1E9BCD</string>
-			<key>to</key>
-			<string>8E536578-BE7E-4187-AF6E-92151F8C0879 - 8E536578-BE7E-4187-AF6E-92151F8C0879</string>
-		</dict>
-		<key>6C551505-4361-4279-A06F-0CC41E615746</key>
-		<dict>
-			<key>from</key>
-			<string>8E536578-BE7E-4187-AF6E-92151F8C0879 - 8E536578-BE7E-4187-AF6E-92151F8C0879</string>
-			<key>to</key>
-			<string>98D62661-9CF4-417D-AB04-D7C044D25F8A - 98D62661-9CF4-417D-AB04-D7C044D25F8A</string>
-		</dict>
-		<key>82C7524E-3C6C-43FA-A5EB-BE959AEBA93D</key>
+		<key>02E2A4D2-A5D7-4AE9-9B5A-B91FA3471805</key>
 		<dict>
 			<key>from</key>
 			<string>B0291443-567A-4C47-9798-8174DDA3951E - B0291443-567A-4C47-9798-8174DDA3951E</string>
 			<key>to</key>
 			<string>B47F49EE-5974-45AD-A7BB-0B45711AF912 - B47F49EE-5974-45AD-A7BB-0B45711AF912</string>
 		</dict>
-		<key>95722E53-20DE-4B62-B0B6-647E0118D89B</key>
+		<key>13CFC193-B05E-4864-8166-FF7CAC59E336</key>
+		<dict>
+			<key>from</key>
+			<string>98D62661-9CF4-417D-AB04-D7C044D25F8A - 98D62661-9CF4-417D-AB04-D7C044D25F8A</string>
+			<key>to</key>
+			<string>71D642B0-0411-4D83-B804-9616D416BE98 - 71D642B0-0411-4D83-B804-9616D416BE98</string>
+		</dict>
+		<key>2C31533D-682E-406E-A41D-BDB069D8C8C9</key>
+		<dict>
+			<key>from</key>
+			<string>EAA75385-CBAE-40A9-AB0F-3C2A1B1E9BCD - EAA75385-CBAE-40A9-AB0F-3C2A1B1E9BCD</string>
+			<key>to</key>
+			<string>8E536578-BE7E-4187-AF6E-92151F8C0879 - 8E536578-BE7E-4187-AF6E-92151F8C0879</string>
+		</dict>
+		<key>3933DD7A-28FC-4F74-B99B-CA7F2CA29AB2</key>
+		<dict>
+			<key>from</key>
+			<string>B9C487CA-1B70-4B42-BE3F-D3307F582E7A - B9C487CA-1B70-4B42-BE3F-D3307F582E7A</string>
+			<key>to</key>
+			<string>EAA75385-CBAE-40A9-AB0F-3C2A1B1E9BCD - EAA75385-CBAE-40A9-AB0F-3C2A1B1E9BCD</string>
+		</dict>
+		<key>473765DB-DA7C-4E52-937A-E903CFD855CF</key>
+		<dict>
+			<key>from</key>
+			<string>CD49454A-2770-4738-BFDF-0DD8CCA4715A - CD49454A-2770-4738-BFDF-0DD8CCA4715A</string>
+			<key>to</key>
+			<string>99AA447B-9B97-46EC-B6C1-B0E412C0B3AE - 99AA447B-9B97-46EC-B6C1-B0E412C0B3AE</string>
+		</dict>
+		<key>C1D6363E-14D9-435D-A46B-BC3493711CA3</key>
+		<dict>
+			<key>from</key>
+			<string>71D642B0-0411-4D83-B804-9616D416BE98 - 71D642B0-0411-4D83-B804-9616D416BE98</string>
+			<key>to</key>
+			<string>9E0C645E-0C72-4E99-83AA-34FDA3D6023B - 9E0C645E-0C72-4E99-83AA-34FDA3D6023B</string>
+		</dict>
+		<key>C332C6C6-8484-4701-89EA-3E9DCF7D115B</key>
 		<dict>
 			<key>from</key>
 			<string>B47F49EE-5974-45AD-A7BB-0B45711AF912 - B47F49EE-5974-45AD-A7BB-0B45711AF912</string>
 			<key>to</key>
 			<string>B9C487CA-1B70-4B42-BE3F-D3307F582E7A - B9C487CA-1B70-4B42-BE3F-D3307F582E7A</string>
+		</dict>
+		<key>D1C030BF-9720-4F89-A69B-20CE227FB875</key>
+		<dict>
+			<key>from</key>
+			<string>9E0C645E-0C72-4E99-83AA-34FDA3D6023B - 9E0C645E-0C72-4E99-83AA-34FDA3D6023B</string>
+			<key>to</key>
+			<string>CD49454A-2770-4738-BFDF-0DD8CCA4715A - CD49454A-2770-4738-BFDF-0DD8CCA4715A</string>
+		</dict>
+		<key>DAC8F6BA-612D-41A7-947F-B8CB1A8E8D6C</key>
+		<dict>
+			<key>from</key>
+			<string>8E536578-BE7E-4187-AF6E-92151F8C0879 - 8E536578-BE7E-4187-AF6E-92151F8C0879</string>
+			<key>to</key>
+			<string>98D62661-9CF4-417D-AB04-D7C044D25F8A - 98D62661-9CF4-417D-AB04-D7C044D25F8A</string>
 		</dict>
 	</dict>
 	<key>variables</key>
@@ -1437,15 +1437,27 @@ convert -delay $FPS "${@:2}" -set filename: '%t' "$DIR/%[filename:]-gif-$1-fps.g
 	</array>
 	<key>workflowMetaData</key>
 	<dict>
-		<key>serviceApplicationBundleID</key>
-		<string></string>
-		<key>serviceApplicationPath</key>
-		<string></string>
+		<key>applicationBundleIDsByPath</key>
+		<dict/>
+		<key>applicationPaths</key>
+		<array/>
+		<key>inputTypeIdentifier</key>
+		<string>com.apple.Automator.fileSystemObject.image</string>
+		<key>outputTypeIdentifier</key>
+		<string>com.apple.Automator.nothing</string>
+		<key>presentationMode</key>
+		<integer>15</integer>
+		<key>processesInput</key>
+		<integer>0</integer>
 		<key>serviceInputTypeIdentifier</key>
 		<string>com.apple.Automator.fileSystemObject.image</string>
 		<key>serviceOutputTypeIdentifier</key>
 		<string>com.apple.Automator.nothing</string>
 		<key>serviceProcessesInput</key>
+		<integer>0</integer>
+		<key>systemImageName</key>
+		<string>NSActionTemplate</string>
+		<key>useAutomaticInputType</key>
 		<integer>0</integer>
 		<key>workflowTypeIdentifier</key>
 		<string>com.apple.Automator.servicesMenu</string>
